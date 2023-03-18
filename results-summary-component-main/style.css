@@ -65,11 +65,11 @@ body {
 .total-score p:nth-child(1) {
     color: var(--White);
     font-size: 25px;
-    
-
 }
 
 .total-score p:nth-child(2) {
     color: var(--lightlavender);
     font-size: var(--paragraphs);
 }
+
+/*  */
