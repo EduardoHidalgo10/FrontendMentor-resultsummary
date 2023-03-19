@@ -163,7 +163,6 @@ body {
 
 /* colors of stats */
 
-
 .button-continue {
     color: var(--White);
     background: #303b59;
@@ -172,4 +171,58 @@ body {
     border-radius: 18px;
     align-self: center;
     margin-top: 30px;
+}
+
+
+@media (min-width:1000px) {
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 50px;
+
+    }
+
+    .result {
+        width: 25%;
+        height: 480px;
+        border-top-right-radius: 25px;
+        border-top-left-radius: 25px;
+        position: absolute;
+        left: 21rem;
+    }
+
+    .summary {
+    border-radius: 25px;
+    box-shadow: 15px 16px 34px -15px rgba(120,131,231,0.68);
+    -webkit-box-shadow: 15px 16px 34px -15px rgba(120,131,231,0.68);
+    -moz-box-shadow: 15px 16px 34px -15px rgba(120,131,231,0.68);
+    margin-top: 30px;
+    width: 380px;
+    height: 430px;
+    padding: 20px;
+    margin: 0;
+    margin-left: 320px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+
+   
+    }
+
+
+    .result-message p:nth-child(2) {
+        color:var(--lightlavender);
+        margin-top: 10px;
+        font-size: 20px;
+    
+    }
+  
+
+
+    .attribution {
+        display: none;
+    }
+
 }
