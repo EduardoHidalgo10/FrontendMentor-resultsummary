@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300;1,200&display=swap');
+
+
 :root {
     /* Primary colors */
     --lightred:hsl(0, 100%, 67%);
@@ -24,7 +27,7 @@
 
 
     /* Font */
-    --family:https://fonts.google.com/specimen/Hanken+Grotesk;
+    --family:'Hanken Grotesk', sans-serif;
     --sm:500px;
     --md:700px;
     --lg:800px;
@@ -37,39 +40,136 @@ body {
 }
 
 .result {
-    background: var(--lightroyalblue);
+    background: linear-gradient(to bottom, var(--violetblue), var(--lightroyalblue));
     width: 100%;
     height: 350px;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
 }
 
-.result h3 {
+.result h2 {
     color: var(--lightlavender);
 }
 
 .total-score {
-    background: var(--violetblue);
+
+    background: linear-gradient(to bottom, var(--darkgrayblue),var(--cobaltblue));
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 120px;
-    height: 120px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
 }
 
 .total-score p:nth-child(1) {
     color: var(--White);
-    font-size: 25px;
+    font-size: 37px;
+    font-weight: bold;
+    
+
 }
 
 .total-score p:nth-child(2) {
     color: var(--lightlavender);
     font-size: var(--paragraphs);
+    margin-top: -40px;
 }
 
-/*  */
+.result-message {
+    text-align: center;
+    width: 250px;
+    color: var(--lightlavender);
+}
+
+.result-message p:nth-child(1) {
+    font-size: 30px;
+    font-weight: bold;
+    color:var(--White);
+}
+
+.result-message p:nth-child(2) {
+    color:var(--lightlavender);
+    margin-top: -20px;
+
+}
+
+
+
+/* summary section */
+
+.summary {
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.summary-stats {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 4px;
+    padding: 5px
+}
+
+
+.summary-stats p {
+    margin-left: 5px;
+}
+
+/* colors of stats */
+.reaction {
+    color: var(--lightred);
+    font-weight: bold;
+}
+
+.memory {
+    color: var(--Orangeyyellow);
+    font-weight: bold;
+}
+
+.verbal {
+    color: var(--greenteal);
+    font-weight: bold;
+}
+
+.visual {
+    color: var(--cobaltblue);
+    font-weight: bold;
+}
+
+.summary-stats.one {
+    background: rgb(252, 225, 225);
+}
+
+.summary-stats.two {
+    background: rgb(255, 255, 216)
+}
+
+.summary-stats.three {
+    background: rgb(220, 255, 220);
+}
+
+.summary-stats.four {
+    background: rgb(227, 227, 249);
+}
+
+
+
+/* colors of stats */
+
+
+.button-continue {
+    color: var(--White);
+    background: #303b59;
+    width: 350px;
+    height: 50px;
+    border-radius: 18px;
+    align-self: center;
+    margin-top: 30px;
+}
