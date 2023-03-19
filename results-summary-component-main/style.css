@@ -225,4 +225,9 @@ body {
         display: none;
     }
 
+
+    .button-continue:hover {
+        background: rgb(35, 35, 125);
+    }
+
 }
