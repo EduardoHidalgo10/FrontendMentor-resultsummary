@@ -190,8 +190,8 @@ body {
         height: 480px;
         border-top-right-radius: 25px;
         border-top-left-radius: 25px;
-        position: absolute;
-        left: 21rem;
+        /* position: absolute;
+        left: 21rem; */
     }
 
     .summary {
@@ -204,7 +204,7 @@ body {
     height: 430px;
     padding: 20px;
     margin: 0;
-    margin-left: 320px;
+    margin-left: -8px;
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
 
